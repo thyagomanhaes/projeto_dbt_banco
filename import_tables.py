@@ -11,9 +11,9 @@ tables = os.listdir(path_tables) # List the files in path_tables
 # password = getpass('Database password:')
 
 #%% Create database connection
-HOST="34.218.235.113"
-USER="greenvest"
-PASSWORD="greenvesttecnologia"
+HOST=""
+USER=""
+PASSWORD=""
 con = create_engine(f'postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:5432/soccerbets')
 
 #%% Upload tables
