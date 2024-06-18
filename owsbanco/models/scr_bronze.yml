@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: soccerbets
+    schema: transacional
+    tables:
+      - name: transfer_ins
+      - name: country
+      - name: d_week
+      - name: customers
+      - name: d_month
+      - name: state
+      - name: d_year
+      - name: transfer_outs
+      - name: city
+      - name: pix_movements
+      - name: d_time
+      - name: accounts
+      - name: d_weekday

@@ -17,9 +17,44 @@ Obs: free port 5432 to have access to container
 >> I'm gonna use a Python script to load the CSV files(sources) to Postgres tables
 
 
-Step 2:
+# Step 2:
 
 First, create a virtual enviroment
 >> python3 -m venv .venv
 
+Activate the environment
+>> source .venv/Scripts/activate
 
+# Step 4:
+>> python import_tables.py
+
+# Step 5:
+Install package dbt-postgres
+>> pip install dbt-postgres
+
+# Step 6:
+Init a DBT Project
+>> dbt init owsbanco
+
+# Step 7:
+Connect DBT to databse(DW)
+
+# Step 8:
+Create profiles.yml to connect DBT to postgresql
+
+# Step 9: run specific model called location.sql
+>> dbt run --select location
+
+# Step 10:
+>> dbt docs generate
+
+>> dbt run
+
+>> dbt docs serve
+
+
+test dbt debug
+
+# Step 11:
+If want to run the project in prd enviroment
+>> dbt build --target=prod
